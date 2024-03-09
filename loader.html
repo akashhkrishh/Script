@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+  
+    <div id="myDIV">
+
+    </div>
+    <script>
+        function run() {
+            var ul = document.getElementById("ul");
+            for (var i = 1; i < 68; i++) {
+                var end = i;
+                if (i < 10) {
+                    end = "0" + i;
+                }
+                // var url = ``;
+                const div = document.createElement("div");
+                const li= document.createElement("h1");
+                li.innerText=end
+                const para = document.createElement("img");
+                para.src = url
+                para.height=100
+                div.appendChild(li);
+                div.appendChild(para);
+                document.getElementById("myDIV").appendChild(div);
+            }
+        }
+        run()
+    
+    </script>
+</body>
+
+</html>
